@@ -1,0 +1,25 @@
+{
+  "namespace": "testa",
+  "default_branch": "main",
+  "default_params": {
+    "PUSH_LATEST": "true",
+    "RUN_GO_TEST": "false"
+  },
+  "jobs": [
+    {"name": "activity-rpc-testa", "type": "rpc", "service": "activity-rpc"},
+    {"name": "admin-rpc-testa", "type": "rpc", "service": "admin-rpc"},
+    {"name": "ai-rpc-testa", "type": "rpc", "service": "ai-rpc"},
+    {"name": "finance-rpc-testa", "type": "rpc", "service": "finance-rpc"},
+    {"name": "game-rpc-testa", "type": "rpc", "service": "game-rpc"},
+    {"name": "member-rpc-testa", "type": "rpc", "service": "member-rpc"},
+    {"name": "notification-rpc-testa", "type": "rpc", "service": "notification-rpc"},
+    {"name": "payment-rpc-testa", "type": "rpc", "service": "payment-rpc"},
+    {"name": "report-rpc-testa", "type": "rpc", "service": "report-rpc"},
+    {"name": "risk-rpc-testa", "type": "rpc", "service": "risk-rpc"},
+    {"name": "tenant-rpc-testa", "type": "rpc", "service": "tenant-rpc"},
+    {"name": "bff-admin-testa", "type": "bff", "service": "bff-admin"},
+    {"name": "bff-merchant-testa", "type": "bff", "service": "bff-merchant"},
+    {"name": "bff-player-testa", "type": "bff", "service": "bff-player"},
+    {"name": "statistics-testa", "type": "standalone", "service": "statistics"}
+  ]
+}

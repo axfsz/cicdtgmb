@@ -1,0 +1,17 @@
+services:
+  ugtesta-tgmb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ugtesta-tgmb:latest
+    container_name: ugtesta-tgmb
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./jobs.json:/app/jobs.json:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "20m"
+        max-file: "5"
